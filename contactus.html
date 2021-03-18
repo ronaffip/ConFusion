@@ -79,8 +79,8 @@
             </p>
           </div>
           <div class="col-12 col-sm align-self-center">
-            <img src="img/logo.png" class="img-fluid">
-        </div>
+            <img src="img/logo.png" class="img-fluid" />
+          </div>
         </div>
       </div>
     </header>
@@ -115,6 +115,36 @@
         </div>
         <div class="col-12 col-sm-6 offset-sm-1">
           <h5>Map of our Location</h5>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="300"
+                height="250"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=121,%20Clear%20Water%20Bay%20Road%20Clear%20Water%20Bay,%20Kowloon%20HONG%20KONG&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a href="https://youtube-embed-code.com"></a><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 250px;
+                  width: 300px;
+                }</style
+              ><a href="https://www.embedgooglemap.net"></a
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 250px;
+                  width: 300px;
+                }
+              </style>
+            </div>
+          </div>
         </div>
         <div class="col-12 col-sm-11 offset-sm-1">
           <div class="btn-group" role="group">
@@ -139,62 +169,113 @@
           <h3>Send us your Feedback</h3>
         </div>
         <div class="col-12 col-md-9">
-            <form>
-                <div class="form-group row">
-                    <label for="firstname" class="col-md-2 col-form-label">First Name</label>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
-                    </div>
+          <form>
+            <div class="form-group row">
+              <label for="firstname" class="col-md-2 col-form-label"
+                >First Name</label
+              >
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="First Name"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="lastname" class="col-md-2 col-form-label"
+                >Last Name</label
+              >
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastname"
+                  name="lastname"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="telnum" class="col-12 col-md-2 col-form-label"
+                >Contact Tel.</label
+              >
+              <div class="col-5 col-md-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="areacode"
+                  name="areacode"
+                  placeholder="Area code"
+                />
+              </div>
+              <div class="col-7 col-md-7">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telnum"
+                  name="telnum"
+                  placeholder="Tel. number"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="emailid" class="col-md-2 col-form-label">Email</label>
+              <div class="col-md-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailid"
+                  name="emailid"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-6 offset-md-2">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="approve"
+                    id="approve"
+                    value=""
+                  />
+                  <label class="form-check-label" for="approve">
+                    <strong>May we contact you?</strong>
+                  </label>
                 </div>
-                <div class="form-group row">
-                    <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
-                    <div class="col-5 col-md-3">
-                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
-                    </div>
-                    <div class="col-7 col-md-7">
-                        <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="emailid" class="col-md-2 col-form-label">Email</label>
-                    <div class="col-md-10">
-                        <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-md-6 offset-md-2">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
-                            <label class="form-check-label" for="approve">
-                                <strong>May we contact you?</strong>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-3 offset-md-1">
-                        <select class="form-control">
-                            <option>Tel.</option>
-                            <option>Email</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-                    <div class="col-md-10">
-                        <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="offset-md-2 col-md-10">
-                        <button type="submit" class="btn btn-primary">Send Feedback</button>
-                    </div>
-                </div>
-            </form>
+              </div>
+              <div class="col-md-3 offset-md-1">
+                <select class="form-control">
+                  <option>Tel.</option>
+                  <option>Email</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="feedback" class="col-md-2 col-form-label"
+                >Your Feedback</label
+              >
+              <div class="col-md-10">
+                <textarea
+                  class="form-control"
+                  id="feedback"
+                  name="feedback"
+                  rows="12"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-md-2 col-md-10">
+                <button type="submit" class="btn btn-primary">
+                  Send Feedback
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
         <div class="col-12 col-md"></div>
       </div>
@@ -259,7 +340,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-auto">
-            <p>© Copyright 2018 Ristorante Con Fusion</p>
+            <p>© Copyright 2021 Ristorante Con Fusion</p>
           </div>
         </div>
       </div>
